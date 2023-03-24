@@ -42,7 +42,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <span class="navigation-link">Каталог товаров</span>
+            <span class="navigation-link-menu">Каталог товаров</span>
             <button class="open-button">
               <svg></svg>
               <span class="visually-hidden">Открыть список</span>
@@ -81,17 +81,17 @@
             </ul>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-link-menu" href="">
               <span>Доставка</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-link-menu" href="">
               <span>Гарантия</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-link-menu" href="">
               <span>Контакты</span>
             </a>
           </li>
@@ -115,7 +115,7 @@
           <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
           <p class="slider-describe">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
             замаскированным под стандартную камеру.</p>
-          <button class="detail-button" type="button">Подробнее</button>
+          <button class="button detail-button" type="button">Подробнее</button>
           <ul class="detail-list">
             <li class="detail-item">
               <span class="detail-value">800 м</span>
@@ -140,7 +140,7 @@
           <h3 class="slider-title">Худеем правильно!</h3>
           <p class="slider-describe">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
             соблюдать диету.</p>
-          <button class="detail-button" type="button">Подробнее</button>
+          <button class="button detail-button" type="button">Подробнее</button>
           <ul class="detail-list">
             <li class="detail-item">
               <span class="detail-value">48 часов</span>
@@ -161,7 +161,7 @@
           <h3 class="slider-title">Делай селфи, как Бен Стиллер! </h3>
           <p class="slider-describe">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
             метров длиной и весом всего 5 кг.</p>
-          <button class="detail-button" type="button">Подробнее</button>
+          <button class="button detail-button" type="button">Подробнее</button>
           <ul class="detail-list">
             <li class="detail-item">
               <span class="detail-value">8,5 м</span>
@@ -204,79 +204,81 @@
           <li class="menu-item">
             <button class="menu-button" type="button">
               <svg></svg>
-              <span class="menu-describe">Виртуальная реальность</span>
             </button>
+            <span class="menu-describe">Виртуальная реальность</span>
           </li>
           <li class="menu-item">
             <button class="menu-button" type="button">
               <svg></svg>
-              <span class="menu-describe">Моноподы для селфи</span>
             </button>
+            <span class="menu-describe">Моноподы для селфи</span>
           </li>
           <li class="menu-item">
             <button class="menu-button" type="button">
               <svg></svg>
-              <span class="menu-describe">Экшн-камеры</span>
             </button>
+            <span class="menu-describe">Экшн-камеры</span>
           </li>
           <li class="menu-item">
             <button class="menu-button" type="button">
               <svg></svg>
-              <span class="menu-describe">Фитнес-браслеты</span>
             </button>
+            <span class="menu-describe">Фитнес-браслеты</span>
           </li>
           <li class="menu-item">
             <button class="menu-button" type="button">
               <svg></svg>
-              <span class="menu-describe">Умные часы</span>
             </button>
+            <span class="menu-describe">Умные часы</span>
           </li>
           <li class="menu-item">
             <button class="menu-button" type="button">
               <svg></svg>
-              <span class="menu-describe">Квадрокоптеры</span>
             </button>
+            <span class="menu-describe">Квадрокоптеры</span>
           </li>
         </ul>
       </section>
 
-      <section class="service">
-        <h2 class="service-title visually-hidden">Услуги: доставка, гарантия, кредит</h2>
-        <ul class="service-list">
-          <li class="service-item">
-            <button class="service-button service-button-current" type="button">
-              <span>Доставка</span>
-            </button>
-          </li>
-          <li class="service-item">
-            <button class="service-button" type="button">
-              <span>Гарантия</span>
-            </button>
-          </li>
-          <li class="service-item">
-            <button class="service-button" type="button">
-              <span>Кредит</span>
-            </button>
-          </li>
-        </ul>
+      <div class="service-container">
+        <section class="service">
+          <h2 class="service-title visually-hidden">Услуги: доставка, гарантия, кредит</h2>
+          <ul class="service-list">
+            <li class="service-item">
+              <button class="button service-button service-button-current" type="button">
+                <span>Доставка</span>
+              </button>
+            </li>
+            <li class="service-item">
+              <button class="button service-button" type="button">
+                <span>Гарантия</span>
+              </button>
+            </li>
+            <li class="service-item">
+              <button class="button service-button" type="button">
+                <span>Кредит</span>
+              </button>
+            </li>
+          </ul>
 
-        <div class="service-describe">
-          <h3 class="service-describe-title">Доставка</h3>
-          <p class="service-describe-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-            бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
-        <div class="service-describe">
-          <h3 class="service-describe-title">Гарантия</h3>
-          <p class="service-describe-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-            переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        </div>
-        <div class="service-describe">
-          <h3 class="service-describe-title">Кредит</h3>
-          <p class="service-describe-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-            наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-        </div>
+          <div class="service-describe">
+            <h3 class="service-describe-title">Доставка</h3>
+            <p class="service-describe-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+              бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="service-describe">
+            <h3 class="service-describe-title">Гарантия</h3>
+            <p class="service-describe-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+              переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </div>
+          <div class="service-describe">
+            <h3 class="service-describe-title">Кредит</h3>
+            <p class="service-describe-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+              наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+          </div>
 
-      </section>
+        </section>
+      </div>
 
       <button class="order-button">
         <svg></svg>
@@ -344,19 +346,19 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-logo" href="#">
+            <a class="footer-logo-social" href="#">
               <svg></svg>
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-logo" href="#">
+            <a class="footer-logo-social" href="#">
               <svg></svg>
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-logo" href="#">
+            <a class="footer-logo-social" href="#">
               <svg></svg>
               <span class="visually-hidden">Твиттер</span>
             </a>
