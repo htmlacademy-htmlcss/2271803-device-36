@@ -22,7 +22,25 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -31,11 +49,131 @@ body {
   min-width: 1440px;
   padding-left: 140px;
   padding-right: 140px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .page-header {
   color: #000000;
   background-color: #FFE17F;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 1160px;
+  position: relative;
+}
+
+.navigation-logo {
+  position: absolute;
+  top: -20px;
+  width: 151px;
+  height: 42px;
+  left: 60px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 247px;
+  align-items: center;
+  height: 40px;
+}
+
+.navigation-list-top {
+  display: flex;
+  flex-direction: row;
+  margin-top: 46px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.search-form {
+  width: 517px;
+  display: flex;
+  margin: 0 27px 0 60px;
+}
+
+.search-field {
+  all: unset;
+  border: 2px solid #000000;
+  border-right: none;
+  height: 38px;
+  width: 355px;
+  border-radius: 50px 0 0 50px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  padding-left: 48px;
+}
+
+.search-button {
+  font-size: 16px;
+  line-height: 20px;
+  all: unset;
+  width: 160px;
+  text-align: center;
+  border: 2px solid #000000;
+  height: 38px;
+  border-radius: 0 50px 50px 0;
+  font-weight: 400;
+}
+
+.navigation-list-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 60px;
+}
+
+.navigation-item-button {
+  display: flex;
+  margin-left: 60px;
+  }
+
+.open-button {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.text-button {
+  font-family: 'Raleway';
+  color: #000000;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  align-self: center;
+  margin-right: 16px;
+}
+
+.navigation-item-menu {
+  display: flex;
+  width: 471px;
+  justify-content: space-between;
+}
+
+.navigation-link-menu {
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #000000;
+text-decoration: none;
 }
 
 .navigation-link {
@@ -49,6 +187,39 @@ body {
   text-decoration: none;
 }
 
+.navigation-link-compare {
+  padding-left: 8px;
+}
+
+.link {
+  padding-left: 8px;
+}
+
+.navigation-link-bag {
+  position: relative;
+}
+
+.navigation-link-bag::before {
+  content: attr(data-counter);
+  position: absolute;
+  min-width: 21px;
+  height: 21px;
+  left: 10px;
+  top: 6px;
+  padding: 0 2px;
+  transform: translateX(-100%);
+  background-color: #ffffff;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  border-radius: 10px;
+}
+
 .out-link {
   font-family: 'Rubik';
   font-style: normal;
@@ -59,10 +230,51 @@ body {
   opacity: 0.3;
 }
 
+.drop-menu-item {
+  display: none;
+}
+
+.drop-menu-list {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+  letter-spacing: 0;
+  z-index: 10;
+
+  margin-right: 50px;
+}
+
+.main-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-index {
   background-color: #ffffff;
   color: #000000;
 }
+
+.sliders {
+  counter-reset: number 00;
+}
+
+.slider-1,
+.slider-2,
+.slider-3 {
+  counter-increment: number 01;
+}
+
+.slider-1::marker,
+.slider-2::marker,
+.slider-3::marker {
+  content: counter(number);
+}
+
 
 .slider-title {
   font-family: 'Raleway', sans-serif;
@@ -216,7 +428,7 @@ body {
   color: #FFFFFF;
 }
 
-.footer-button {
+.footer-navigation-link {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
