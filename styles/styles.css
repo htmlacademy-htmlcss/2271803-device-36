@@ -138,11 +138,11 @@ body {
 
 .search-form-label {
   position: relative;
-  }
+}
 
 .search-form-label:focus-within {
-outline: 2px solid #af4fff;
-outline-offset: 2px;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .search-form-label::before {
@@ -832,10 +832,36 @@ outline-offset: 2px;
 
 .order-button {
   margin: 0 auto;
+  position: relative;
+}
+
+.order::before {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  background-color: #ffe17f;
+  background-image: url("../images/order-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .order {
+  width: 1160px;
+  height: 100px;
+  padding: 40px 125px;
   background: #f0f0f0;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .order-text {
