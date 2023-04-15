@@ -18,12 +18,11 @@
       <nav class="navigation">
         <div class="navigation-list-top">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label>
+            <label class="search-form-label">
               <span class="visually-hidden">Поиск по сайту.</span>
             </label>
             <input class="search-field" placeholder="Поиск по сайту" type="text" name="site-search" required>
-            <span class="search-field-decoration"></span>
-            <button class="search-button" type="submit">Найти</button>
+            <button class="search-button button" type="submit">Найти</button>
           </form>
           <div class="navigation-menu">
             <a class="navigation-link" href="#">
@@ -72,7 +71,7 @@
         </div>
         <div class="navigation-list-bottom">
           <div class="navigation-item-button">
-            <button class="open-button" type="button">
+            <button class="open-button button" type="button">
               <span class="text-button">Каталог товаров</span>
               <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle opacity="0.3" cx="25" cy="25" r="24" stroke="black" stroke-width="2" />
@@ -193,25 +192,25 @@
             </dl>
           </li>
         </ul>
-        <button class="slider-button slider-prev" type="button">
+        <button class="slider-button slider-prev button" type="button">
           <span class="visually-hidden">Предыдущий товар.</span>
         </button>
-        <button class="slider-button slider-next" type="button">
+        <button class="slider-button slider-next button" type="button">
           <span class="visually-hidden">Следующий товар.</span>
         </button>
         <ul class="slider-pagination">
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+            <button class="slider-pagination-button slider-pagination-button-current button" type="button">
               <span class="visually-hidden">1 товар.</span>
             </button>
           </li>
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
+            <button class="slider-pagination-button button" type="button">
               <span class="visually-hidden">2 товар.</span>
             </button>
           </li>
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
+            <button class="slider-pagination-button button" type="button">
               <span class="visually-hidden">3 товар.</span>
             </button>
           </li>
@@ -318,17 +317,21 @@
       </section>
 
       <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <div class="subscribe-text-wrapper">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-item">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а
           также акции, спецпредложения и вот это вот всё.</p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="subscribe-form-email">
-            <span class="visually-hidden">Подпишитесь.</span>
-            <input class="subscribe-field" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
-          </label>
-          <button class="button" type="submit">Подписаться</button>
-        </form>
-        <span class="subscribe-text">Это бесплатно</span>
+        </div>
+        <div class="subscribe-form-wrapper">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="subscribe-form-email">
+              <span class="visually-hidden">Подпишитесь.</span>
+              <input class="subscribe-field" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+            </label>
+            <button class="button" type="submit">Подписаться</button>
+          </form>
+          <span class="subscribe-text">Это бесплатно</span>
+        </div>
       </section>
     </main>
 
