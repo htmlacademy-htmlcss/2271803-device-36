@@ -219,21 +219,25 @@
             <h2 class="visually-hidden">Результаты поиска.</h2>
             <div class="sort-select">
               <h3 class="filter-title">Сортировка:</h3>
-              <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Популярные</option>
-                <option value="price">Цена</option>
-                <option value="new">Новинки</option>
-              </select>
+              <div class="select-control-container">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">Популярные</option>
+                  <option value="price">Цена</option>
+                  <option value="new">Новинки</option>
+                </select>
+              </div>
             </div>
             <div class="sort-button">
-              <button class="up-button">
-                <svg></svg>
-                <span class="visually-hidden">По возрастанию.</span>
-              </button>
-              <button class="down-button">
-                <svg></svg>
-                <span class="visually-hidden">По убыванию.</span>
-              </button>
+              <a class="button up-button" href="#" aria-label="По возрастанию.">
+                <svg width="12" height="10" viewBox="0 0 12 10">
+                  <path d="M6 0L11.5 10H0.5"/>
+                </svg>
+              </a>
+              <a class="button down-button" href="#" aria-label="По убыванию.">
+                <svg width="12" height="10" viewBox="0 0 12 10">
+                  <path d="M6 0L11.5 10H0.5"/>
+                </svg>
+              </a>
             </div>
 
           </div>
@@ -296,6 +300,7 @@
               <span>Вперёд</span>
             </a>
           </div>
+        </div>
       </section>
 
 

@@ -1922,6 +1922,120 @@ body {
   background-color: #ffcc33;
 }
 
+.sort-container {
+  width: 100%;
+}
+
+.sort-select {
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.filter-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  max-width: 300px;
+}
+
+.select-control-container {
+  position: relative;
+}
+
+.select-control {
+  border: unset;
+  background-color: transparent;
+  width: 141px;
+  height: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  -webkit-appearance: none;
+          appearance: none;
+  background-image: url("../images/catalog-select-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 9px 6px;
+  background-position: 122px 14px;
+  outline: none;
+}
+
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:focus-visible {
+  background-color: none;
+  outline-offset: 2px;
+  outline: 2px solid #af4fff;
+}
+
+.select-control:active {
+  opacity: 0.3;
+}
+
+.select-control:disabled {
+  opacity: 0.1;
+}
+
+.sort-button {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 150px;
+}
+
+.up-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  fill: rgba(0, 0, 0, 0.125);
+  position: relative;
+  outline: none;
+}
+
+.down-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  fill: rgba(0, 0, 0, 0.125);
+  position: relative;
+  outline: none;
+  transform: rotate(180deg);
+}
+
+.up-button:hover,
+.down-button:hover {
+  fill: rgba(0, 0, 0, 0.314);
+}
+
+.up-button:focus-visible,
+.down-button:focus-visible {
+  background-color: none;
+  outline: 2px solid #af4fff;
+}
+
+.up-button:active,
+.down-button:active {
+  fill: #000000;
+}
+
+.up-button:active:before,
+.down-button:active::before {
+  outline: none;
+}
+
 .product-container {
   background: #ffffff;
 }
