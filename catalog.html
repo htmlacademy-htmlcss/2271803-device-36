@@ -21,7 +21,7 @@
             <label class="search-form-label">
               <span class="visually-hidden">Поиск по сайту.</span>
             </label>
-            <input class="search-field" placeholder="Поиск по сайту" type="text" name="site-search" required>
+            <input class="search-field" placeholder="Текст поиска" type="text" name="site-search" required>
             <button class="search-button button" type="submit">Найти</button>
           </form>
           <div class="navigation-menu">
@@ -31,9 +31,9 @@
                   d="M1 12H14C13.8 9.4 11.9 7.2 9.3 6.5C10.3 5.9 11 4.8 11 3.5C11 1.6 9.4 0 7.5 0C5.6 0 4 1.6 4 3.5C4 4.8 4.7 5.9 5.7 6.5C3.1 7.2 1.2 9.4 1 12Z"
                   fill="black" />
               </svg>
-              <span class="link">Войти</span>
+              <span class="link">Коля Петухов</span>
             </a>
-            <a class="navigation-link navigation-link-out" aria-label="Выйти" href="#"></a>
+            <a class="navigation-link navigation-link-out" href="#">Выйти</a>
           </div>
           <div class="navigation-menu">
             <a class="navigation-link navigation-link-compare" href="#">
@@ -114,210 +114,197 @@
         </div>
       </nav>
     </header>
+    <main class="main-inner">
+      <section class="inner-header">
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <span class="breadcrumbs-link">Моноподы для селфи</span>
+          </li>
+        </ol>
+      </section>
 
-    <main class="main-index  main-container">
-      <h1 class="visually-hidden">Интернет-магазин гаджетов Девайс.</h1>
-      <section class="marketing">
-        <h2 class="visually-hidden">Реклама товаров.</h2>
-        <ul class="sliders">
-          <li class="slider slider-current">
-            <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
-            <div class="slider-text">
-              <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
-              <p class="slider-describe">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-                замаскированным под стандартную камеру.</p>
-              <a class="detail" href="#">Подробнее</a>
-              <dl class="detail-list">
-                <div class="detail-item">
-                  <dd class="detail-value">800 м</dd>
-                  <dt class="detail-characteristic">Дальность полета</dt>
+      <section class="catalog">
+        <div class="catalog-container">
+          <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
+
+          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+            <h3 class="filter-title">Фильтр:</h3>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость</legend>
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle toggle-min button" type="button"
+                    aria-label="Изменить минимальную цену."><span class="toggle-description">от 0</span></button>
+                  <button class="range-toggle toggle-max button" type="button"
+                    aria-label="Изменить максимальную цену."><span class="toggle-description">до 5000</span></button>
                 </div>
-                <div>
-                  <dd class="detail-value">50 м</dd>
-                  <dt class="detail-characteristic">Радиус поражения</dt>
-                </div>
-              </dl>
-            </div>
-          </li>
-          <li class="slider">
-            <img class="slider-image" src="images/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
-            <h3 class="slider-title">Худеем правильно!</h3>
-            <p class="slider-describe">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
-              соблюдать диету.</p>
-            <a class="detail" href="#">Подробнее</a>
-            <dl class="detail-list">
-              <div class="detail-item">
-                <dd class="detail-value">48 часов</dd>
-                <dt class="detail-characteristic">Без подзарядки</dt>
               </div>
-            </dl>
-          </li>
-          <li class="slider">
-            <img class="slider-image" src="images/slider-3.png" width="560" height="560" alt="Селфи-палка.">
-            <h3 class="slider-title">Делай селфи, как Бен Стиллер! </h3>
-            <p class="slider-describe">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-              метров длиной и весом всего 5 кг.</p>
-            <a class="detail" href="#">Подробнее</a>
-            <dl class="detail-list">
-              <div class="detail-item">
-                <dd class="detail-value">8,5 м</dd>
-                <span class="detail-characteristic">Длина палки</span>
-              </div>
-              <div>
-                <dd class="detail-value">5 кг</dd>
-                <dt class="detail-characteristic">Вес палки</dt>
-              </div>
-              <div>
-                <dd class="detail-value">Карбон</dd>
-                <dt class="detail-characteristic">Материал</dt>
-              </div>
-            </dl>
-          </li>
-        </ul>
-        <button class="slider-button slider-prev button" type="button">
-          <span class="visually-hidden">Предыдущий товар.</span>
-        </button>
-        <button class="slider-button slider-next button" type="button">
-          <span class="visually-hidden">Следующий товар.</span>
-        </button>
-        <ul class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current button" type="button">
-              <span class="visually-hidden">1 товар.</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button button" type="button">
-              <span class="visually-hidden">2 товар.</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button button" type="button">
-              <span class="visually-hidden">3 товар.</span>
-            </button>
-          </li>
-        </ul>
-      </section>
-      <section class="menu">
-        <h2 class="visually-hidden">Меню</h2>
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a class="menu-button" href="#">Виртуальная <br> реальность</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-button" href="index.html">Моноподы <br> для селфи</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-button" href="#">Экшн-камеры</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-button" href="#">Фитнес-браслеты</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-button" href="#">Умные часы</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-button" href="#">Квадрокоптеры</a>
-          </li>
-        </ul>
-      </section>
+            </fieldset>
 
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Цвет</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control" for="black">
+                    <input class="visually-hidden control-input" type="checkbox" name="color" id="black" value="black"
+                      checked>
+                    <span class="control-decoration control-decoration-checkbox"></span>
+                    <span>Черный</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control" for="white">
+                    <input class="visually-hidden control-input" type="checkbox" name="color" id="white" value="white"
+                      checked>
+                    <span class="control-decoration control-decoration-checkbox"></span>
+                    <span>Белый</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control" for="blue">
+                    <input class="visually-hidden control-input" type="checkbox" name="color" id="blue" value="blue">
+                    <span class="control-decoration control-decoration-checkbox"></span>
+                    <span>Синий</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control" for="red">
+                    <input class="visually-hidden control-input" type="checkbox" name="color" id="red" value="red">
+                    <span class="control-decoration control-decoration-checkbox"></span>
+                    <span>Красный</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control" for="pink">
+                    <input class="visually-hidden control-input" type="checkbox" name="color" id="pink" value="pink">
+                    <span class="control-decoration control-decoration-checkbox"></span>
+                    <span>Розовый</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-      <section class="service">
-        <h2 class="visually-hidden">Услуги.</h2>
-        <div class="service-container">
-          <ul class="service-list-button">
-            <li class="service-item">
-              <button class="button service-button service-button-current button-decorated" type="button">Доставка</button>
-            </li>
-            <li class="service-item">
-              <button class="button service-button button-decorated" type="button">Гарантия</button>
-            </li>
-            <li class="service-item">
-              <button class="button service-button button-decorated" type="button">Кредит</button>
-            </li>
-          </ul>
-          <ul class="service-list-describe">
-            <li class="service-describe service-describe-current">
-              <h3 class="service-describe-title">Доставка</h3>
-              <p class="service-describe-text">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду
-                совершенно
-                бесплатно! Ведь <br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            </li>
-            <li class="service-describe">
-              <h3 class="service-describe-title">Гарантия</h3>
-              <p class="service-describe-text">Если из-за возгорания купленного у нас товара у вас <br> сгорит дом — не
-                переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
-            </li>
-            <li class="service-describe">
-              <h3 class="service-describe-title">Кредит</h3>
-              <p class="service-describe-text">Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут
-                для
-                вас
-                наиболее выгодные <br> условия кредита. Выгодные для банка, разумеется.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Bluetooth</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" checked>
+                    <span class="control-decoration control-decoration-radio"></span>
+                    <span>Есть</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="bluetooth" value="no">
+                    <span class="control-decoration control-decoration-radio"></span>
+                    <span>Нет</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-      <section class="order-button">
-        <h2 class="visually-hidden">Доставка под заказ.</h2>
-        <a class="order button">Доставим редкий товар под заказ</a>
-      </section>
-      <section class="contact-info">
-        <h2 class="visually-hidden">Контактная информация.</h2>
-        <section class="about-us">
-          <h3 class="contact-subtitle">О нас</h3>
-          <p class="contact-about-us">Огромный выбор гаджетов не оставит равнодушным <br> гика, который есть в каждом из
-            нас.
-          </p>
-          <p class="contact-about-us">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
-            компаниями:
-          <ul class="contact-company">
-            <li class="contact-company-item">Меловые линии</li>
-            <li class="contact-company-item">СДИК</li>
-            <li class="contact-company-item">ТоксБерри</li>
-          </ul>
-          </p>
-          <a class="about-us-button button button-decorated" href="#">Подробнее о нас</a>
-        </section>
-        <section class="contacts">
-          <h3 class="contact-subtitle">Контакты</h3>
-          <p class="contact-about-us">Вы можете забрать товар сами, заехав в наш офис. <br> Заодно сможете проверить
-            работоспособность покупки.</p>
-          <h4 class="contact-about-us-title">Интернет-магазин «Девайс»</h4>
-          <address class="contact-address">
-            <p class="contact-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
-          <h4 class="contact-about-us-title">Время работы</h4>
-          <ul class="contact-timetable">
-            <li class="contact-timetable-item">пн—пт: с 10:00 до 22:00</li>
-            <li class="contact-timetable-item">сб—вс: с 10:00 до 19:00</li>
-          </ul>
-          <a class="contact-us-button button button-decorated" href="#">Напишите нам</a>
-        </section>
-
-      </section>
-
-      <section class="subscribe">
-        <div class="subscribe-text-wrapper">
-          <h2 class="subscribe-title">Подпишитесь <br> на рассылку</h2>
-          <p class="subscribe-item">Еженедельный дайджест с обзорами новинок, <br> длительными тест-драйвами,
-            распаковками, а
-            также акции, спецпредложения и вот это вот всё.</p>
-        </div>
-        <div class="subscribe-form-wrapper">
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="subscribe-form-email">
-              <span class="visually-hidden">Подпишитесь.</span>
-              <input class="subscribe-field" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
-            </label>
-            <button class="subscribe-button button" type="submit">Подписаться</button>
+            <button class="apply-button decor-button button" type="submit">Показать</button>
           </form>
-          <span class="subscribe-text">Это бесплатно</span>
+
+
+          <div class="sort-container">
+            <h2 class="visually-hidden">Результаты поиска.</h2>
+            <div class="sort-select">
+              <h3 class="sort-title">Сортировка:</h3>
+              <div class="select-control-container">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">Популярные</option>
+                  <option value="price">Цена</option>
+                  <option value="new">Новинки</option>
+                </select>
+              </div>
+              <div class="sort-button">
+                <a class="button up-button" href="#" aria-label="По возрастанию.">
+                  <svg width="12" height="10" viewBox="0 0 12 10">
+                    <path d="M6 0L11.5 10H0.5" />
+                  </svg>
+                </a>
+                <a class="button down-button" href="#" aria-label="По убыванию.">
+                  <svg width="12" height="10" viewBox="0 0 12 10">
+                    <path d="M6 0L11.5 10H0.5" />
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+            <div class="product-container">
+              <ul class="product-list">
+                <li class="product-card">
+                  <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="images/product-1.jpg" alt="Любительская селфи-палка.">
+                    <h3 class="product-card-title">Любительская <br> селфи-палка</h3>
+                    <span class="product-card-price">500 ₽</span>
+                  </a>
+                </li>
+                <li class="product-card">
+                  <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="images/product-2.jpg" alt="Профессиональная селфи-палка.">
+                    <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                    <span class="product-card-price">1 500 ₽</span>
+                  </a>
+                </li>
+                <li class="product-card">
+                  <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="images/product-3.jpg" alt="Непотопляемая селфи-палка.">
+                    <h3 class="product-card-title">Непотопляемая <br> селфи-палка</h3>
+                    <span class="product-card-price">2 500 ₽</span>
+                  </a>
+                </li>
+                <li class="product-card">
+                  <a class="product-card-link" href="#">
+                    <img class="product-card-image" src="images/product-4.jpg" alt="Селфи-палка «Следуй за мной».">
+                    <h3 class="product-card-title">Селфи-палка «Следуй <br> за мной»</h3>
+                    <span class="product-card-price">1 500 ₽</span>
+                  </a>
+                </li>
+              </ul>
+
+              <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+              <div class="pagination">
+                <a class="pagination-link pagination-prev pagination-disabled">
+                  <span>Назад</span>
+                </a>
+
+                <ul class="pagination-list">
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-current">1</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <span class="pagination-link pagination-link-divider" href="#">...</span>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">15</a>
+                  </li>
+                </ul>
+                <a class="pagination-next" href="#">
+                  <span>Вперёд</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+
     </main>
 
     <footer class="page-footer">
